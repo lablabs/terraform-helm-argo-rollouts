@@ -76,7 +76,7 @@ variable "settings" {
   description = "Additional settings which will be passed to the Helm chart values, see https://artifacthub.io/packages/helm/argo/argo-cd"
 }
 
-variable "argocd_application" {
+variable "argo_application_enabled" {
   type        = bool
   default     = false
   description = "If set to true, the module will be deployed as ArgoCD application, otherwise it will be deployed as a Helm release"
