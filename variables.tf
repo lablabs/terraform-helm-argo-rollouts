@@ -67,7 +67,7 @@ variable "helm_atomic" {
 variable "k8s_namespace" {
   type        = string
   default     = "argo"
-  description = "The K8s namespace in which the ingress-nginx has been created"
+  description = "The K8s namespace in which the application has been created"
 }
 
 variable "settings" {
@@ -122,4 +122,9 @@ variable "argo_info" {
 variable "argo_sync_policy" {
   description = "ArgoCD syncPolicy manifest parameter"
   default     = {}
+}
+
+variable "argo_application_namespace" {
+  default     = "argo"
+  description = "Namespace where to deploy Argo application"
 }
